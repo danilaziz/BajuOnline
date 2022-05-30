@@ -19,13 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </TextView>
-
-        <TextView
-            android:textSize="10dp"
-            android:text="Lihat Semua"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </TextView>
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -70,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageButton
-                    android:background="@drawable/jeans1"
+                    android:background="@drawable/kain"
                     android:layout_width="43dp"
                     android:layout_height="53dp">
                 </ImageButton>

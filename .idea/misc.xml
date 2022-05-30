@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/drawable/bulat.xml" value="0.162" />
         <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/ly_hotsale.xml" value="0.25" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/ly_fitur_produk.xml" value="0.22" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/ly_hotsale.xml" value="0.2" />
         <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/ly_kategori.xml" value="0.25" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/menu/menu_bawah.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

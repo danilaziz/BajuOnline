@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
     <androidx.appcompat.widget.Toolbar
@@ -49,6 +50,24 @@
             android:backgroundTint="@color/white">
         </ImageButton>
     </androidx.appcompat.widget.Toolbar>
-    <include layout="@layout/ly_kategori"/>
-    <include layout="@layout/ly_hotsale"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/ly_kategori"/>
+            <include layout="@layout/ly_hotsale"/>
+            <include layout="@layout/ly_fitur_produk"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:menu="@menu/menu_bawah"
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/navigation_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:textStyle="bold"
-            android:text="Hot Sale"
+            android:text="Fitur Produk"
             android:textSize="15dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -27,7 +27,7 @@
     <HorizontalScrollView
         android:scrollbars="none"
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="232dp">
         <LinearLayout
             android:layout_marginStart="10dp"
             android:layout_width="match_parent"
@@ -35,121 +35,59 @@
             android:orientation="horizontal">
 
             <com.example.bajuonline.widget.hotsale
-                android:layout_width="142dp"
+                android:layout_width="139dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="140dp"
+                    android:layout_width="135dp"
                     android:layout_height="167dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/hoodie"
-                    android:cropToPadding="true"></ImageButton>
+                    android:background="@drawable/batik"
+                    android:cropToPadding="true">
+
+                </ImageButton>
 
                 <LinearLayout
-                    android:layout_width="140dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="5dp"
                     android:paddingTop="5dp">
 
                     <TextView
-                        android:layout_width="137dp"
+                        android:layout_width="129dp"
                         android:layout_height="wrap_content"
-                        android:text="Hoodie pria murah kualitas ori"
+                        android:text="Baju batik pria lengan panjang"
                         android:textSize="15dp"
-                        android:textStyle="bold"></TextView>
+                        android:textStyle="bold">
 
-                    <TextView
-                        android:layout_width="137dp"
-                        android:layout_height="wrap_content"
-                        android:text="Rp 60.000 - Rp 150.000"
-                        android:textSize="10dp"></TextView>
-                </LinearLayout>
-            </com.example.bajuonline.widget.hotsale>
-
-            <com.example.bajuonline.widget.hotsale
-                android:layout_width="144dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:layout_width="140dp"
-                    android:layout_height="167dp"
-                    android:adjustViewBounds="true"
-                    android:background="@drawable/jeans1"
-                    android:cropToPadding="true"></ImageButton>
-
-                <LinearLayout
-                    android:layout_width="141dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp"
-                    android:paddingTop="5dp">
-
-                    <TextView
-                        android:layout_width="136dp"
-                        android:layout_height="wrap_content"
-                        android:text="Celana jeans terbaru murah kualitas ori"
-                        android:textSize="15dp"
-                        android:textStyle="bold"></TextView>
+                    </TextView>
 
                     <TextView
                         android:layout_width="135dp"
                         android:layout_height="wrap_content"
-                        android:text="Rp 80.000 - Rp 100.000"
-                        android:textSize="10dp"></TextView>
+                        android:text="Rp 70.000 - Rp 170.000"
+                        android:textSize="10dp">
+
+                    </TextView>
                 </LinearLayout>
             </com.example.bajuonline.widget.hotsale>
 
             <com.example.bajuonline.widget.hotsale
-                android:layout_width="143dp"
+                android:layout_width="137dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:layout_width="140dp"
+                    android:layout_width="135dp"
                     android:layout_height="167dp"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/batik3"
+                    android:background="@drawable/kaos"
                     android:cropToPadding="true"></ImageButton>
 
                 <LinearLayout
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp"
-                    android:paddingTop="5dp">
-
-                    <TextView
-                        android:layout_width="134dp"
-                        android:layout_height="wrap_content"
-                        android:text="Batik murah kualitas premium"
-                        android:textSize="15dp"
-                        android:textStyle="bold"></TextView>
-
-                    <TextView
-                        android:layout_width="133dp"
-                        android:layout_height="wrap_content"
-                        android:text="Rp 50.000 - Rp 100.000"
-                        android:textSize="10dp"></TextView>
-                </LinearLayout>
-            </com.example.bajuonline.widget.hotsale>
-
-            <com.example.bajuonline.widget.hotsale
-                android:layout_width="144dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:layout_width="140dp"
-                    android:layout_height="167dp"
-                    android:adjustViewBounds="true"
-                    android:background="@drawable/kaos6"
-                    android:cropToPadding="true"></ImageButton>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="5dp"
@@ -158,47 +96,121 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Baju kaos murah ori"
+                        android:text="Kaos distro premium"
                         android:textSize="15dp"
                         android:textStyle="bold"></TextView>
 
                     <TextView
-                        android:layout_width="135dp"
+                        android:layout_width="132dp"
                         android:layout_height="wrap_content"
-                        android:text="Rp 50.000 - Rp 100.000"
+                        android:text="Rp 80.000 - Rp 150.000"
+                        android:textSize="10dp">
+
+                    </TextView>
+                </LinearLayout>
+            </com.example.bajuonline.widget.hotsale>
+
+            <com.example.bajuonline.widget.hotsale
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="135dp"
+                    android:layout_height="167dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/hoodie2"
+                    android:cropToPadding="true">
+
+                </ImageButton>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hoodie/Sweater keren"
+                        android:textSize="15dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="129dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 55.000 - Rp 100.000"
                         android:textSize="10dp"></TextView>
                 </LinearLayout>
             </com.example.bajuonline.widget.hotsale>
+
             <com.example.bajuonline.widget.hotsale
-                android:layout_width="162dp"
+                android:layout_width="139dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <ImageButton
-                    android:layout_width="140dp"
+                    android:layout_width="135dp"
                     android:layout_height="167dp"
                     android:adjustViewBounds="true"
-                    android:cropToPadding="true"
-                    android:background="@drawable/kemeja5">
-                </ImageButton>
+                    android:background="@drawable/jeans"
+                    android:cropToPadding="true"></ImageButton>
+
+                <LinearLayout
+                    android:layout_width="137dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="127dp"
+                        android:layout_height="wrap_content"
+                        android:text="Celana jeans terbaru"
+                        android:textSize="15dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 80.000 - Rp 160.000"
+                        android:textSize="10dp"></TextView>
+                </LinearLayout>
+            </com.example.bajuonline.widget.hotsale>
+
+            <com.example.bajuonline.widget.hotsale
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="135dp"
+                    android:layout_height="167dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/batik9"
+                    android:cropToPadding="true"></ImageButton>
+
                 <LinearLayout
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="5dp"
                     android:paddingTop="5dp">
+
                     <TextView
                         android:layout_width="145dp"
                         android:layout_height="wrap_content"
-                        android:text="Kemeja premium"
+                        android:text="Baju batik lengan pendek"
                         android:textSize="15dp"
-                        android:textStyle="bold">
-                    </TextView>
+                        android:textStyle="bold"></TextView>
+
                     <TextView
                         android:layout_width="144dp"
                         android:layout_height="wrap_content"
-                        android:text="Rp 80.000 - Rp 150.000"
-                        android:textSize="10dp">
-                    </TextView>
+                        android:text="Rp 80.000 - Rp 100.000"
+                        android:textSize="10dp"></TextView>
                 </LinearLayout>
             </com.example.bajuonline.widget.hotsale>
         </LinearLayout>
