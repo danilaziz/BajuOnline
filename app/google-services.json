@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "170576261635",
+    "project_id": "bajuonline-f94d3",
+    "storage_bucket": "bajuonline-f94d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170576261635:android:5fe1b1798bc0394e0d9436",
+        "android_client_info": {
+          "package_name": "com.example.bajuonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170576261635-4fuhhh4cnkm64hnkid3avtrvid13up85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9uyuR3waUb1djXbF3lePqxeQoo64lvOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170576261635-4fuhhh4cnkm64hnkid3avtrvid13up85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
