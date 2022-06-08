@@ -25,20 +25,19 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp">
             </ImageView>
+          <TextView
+              android:layout_gravity="center"
+              android:text="Cari Barang Anda disini"
+              android:layout_width="200dp"
+              android:layout_height="20dp">
 
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="20dp"
-                android:text="Cari Barang Anda disini"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp">
-            </TextView>
+          </TextView>
             <ImageButton
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:background="@drawable/ic_camera"
                 android:layout_marginTop="5dp"
-                android:layout_marginStart="80dp">
+                android:layout_marginStart="40dp">
             </ImageButton>
         </com.example.bajuonline.widget.pencarian_bar>
         <ImageButton

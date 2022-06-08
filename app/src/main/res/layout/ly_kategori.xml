@@ -14,7 +14,7 @@
         <TextView
             android:textStyle="bold"
             android:text="Kategori"
-            android:textSize="15dp"
+            android:textSize="18dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -34,11 +34,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageButton
-                    android:background="@drawable/kaos6"
-                    android:layout_width="43dp"
-                    android:layout_height="53dp">
+                    android:background="@drawable/kaos"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp">
                 </ImageButton>
-
             </com.example.bajuonline.widget.kategori>
             <RelativeLayout
                 android:layout_width="15dp"
@@ -63,9 +62,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageButton
-                    android:background="@drawable/kain"
-                    android:layout_width="43dp"
-                    android:layout_height="53dp">
+                    android:background="@drawable/jeans2"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp">
                 </ImageButton>
             </com.example.bajuonline.widget.kategori>
             <RelativeLayout
@@ -90,9 +89,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageButton
-                    android:background="@drawable/hoodie"
-                    android:layout_width="43dp"
-                    android:layout_height="53dp">
+                    android:background="@drawable/hoodie5"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp">
                 </ImageButton>
             </com.example.bajuonline.widget.kategori>
             <RelativeLayout
