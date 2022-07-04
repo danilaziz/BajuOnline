@@ -19,7 +19,4 @@ public class kategori extends LinearLayout {
         super(context, attrs, defStyleAttr);
     }
 
-    public kategori(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-    }
 }

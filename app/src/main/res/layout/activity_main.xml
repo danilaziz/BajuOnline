@@ -10,44 +10,46 @@
         android:layout_width="match_parent"
         android:layout_height="95dp"
         android:background="@color/abu">
-        <com.example.bajuonline.widget.pencarian_bar
+        <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="300dp"
-            android:layout_height="33dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="3dp"
-            android:background="@drawable/bulat"
-            tools:ignore="MissingClass">
-            <ImageView
-                android:src="@drawable/ic_cari"
-                android:layout_width="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+            <TextView
+                android:id="@+id/tv_bajuonline"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp">
-            </ImageView>
-          <TextView
-              android:layout_gravity="center"
-              android:text="Cari Barang Anda disini"
-              android:layout_width="200dp"
-              android:layout_height="20dp">
-
-          </TextView>
-            <ImageButton
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/ic_camera"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="40dp">
-            </ImageButton>
-        </com.example.bajuonline.widget.pencarian_bar>
-        <ImageButton
-            android:layout_width="29dp"
-            android:layout_height="29dp"
-            android:background="@drawable/ic_keranjang"
-            android:layout_marginTop="52dp"
-            android:layout_marginStart="2dp"
-            android:backgroundTint="@color/white">
-        </ImageButton>
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="BajuOnline">
+            </TextView>
+            <Button
+                android:id="@+id/bt_pencarian"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:textSize="13dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/abu"
+                android:inputType="textCapWords"
+                android:drawableStart="@drawable/cari"
+                android:text="Cari Barang Anda disini"
+                android:layout_marginStart="6dp"
+                android:onClick="PencarianActivity"
+                tools:ignore="InvalidId">
+            </Button>
+           <ImageButton
+               android:id="@+id/ib_keranjang"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_marginStart="7dp"
+               android:layout_gravity="center"
+               android:backgroundTint="@color/white"
+               android:background="@drawable/ic_keranjang"
+               android:onClick="KeranjangActivity">
+           </ImageButton>
+        </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
     <androidx.core.widget.NestedScrollView
         android:layout_weight="1"
@@ -56,10 +58,690 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <include layout="@layout/ly_kategori"/>
-            <include layout="@layout/ly_hotsale"/>
-            <include layout="@layout/ly_fitur_produk"/>
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_kategori"
+                    android:textStyle="bold"
+                    android:text="Kategori"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.bajuonline.widget.kategori_elemen
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.bajuonline.widget.kategori
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:id="@+id/ib_baju"
+                            android:background="@drawable/baju1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="BajuActivity"
+                            tools:ignore="OnClick">
+                        </ImageButton>
+                    </com.example.bajuonline.widget.kategori>
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent">
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_baju"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Baju"
+                        android:textSize="12dp"
+                        android:textAlignment="center">
+                    </TextView>
+                </com.example.bajuonline.widget.kategori_elemen>
+                <com.example.bajuonline.widget.kategori_elemen
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.bajuonline.widget.kategori
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:id="@+id/ib_celana"
+                            android:background="@drawable/celana1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="CelanaActivity">
+                        </ImageButton>
+                    </com.example.bajuonline.widget.kategori>
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/tv_celana"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Celana"
+                        android:textSize="12dp"
+                        android:textAlignment="center">
+                    </TextView>
+                </com.example.bajuonline.widget.kategori_elemen>
+                <com.example.bajuonline.widget.kategori_elemen
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.bajuonline.widget.kategori
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:id="@+id/ib_jaket"
+                            android:background="@drawable/jaket2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="JaketActivity">
+                        </ImageButton>
+                    </com.example.bajuonline.widget.kategori>
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/tv_jaket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Jaket"
+                        android:textSize="12dp"
+                        android:textAlignment="center">
+                    </TextView>
+                </com.example.bajuonline.widget.kategori_elemen>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <LinearLayout
+                    android:paddingStart="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_hotsale"
+                        android:textStyle="bold"
+                        android:text="Terlaris"
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <Button
+                        android:id="@+id/bt_lihatsemuaterlaris"
+                        android:layout_width="98dp"
+                        android:layout_height="31dp"
+                        android:textSize="10dp"
+                        android:text="Lihat Semua"
+                        android:background="@drawable/tombol_bulat"
+                        android:textColor="@color/biru"
+                        android:inputType="textCapWords"
+                        android:onClick="LihatSemuaTerlarisActivity">
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_hotsale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/hoodie"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Hoodie pria murah kualitas ori"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 150.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords"
+                                android:onClick="PesanActivity">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/batik6"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Batik pria lengan pendek"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 100.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/kaos"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Baju kaos pria lengan pendek"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 70.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/jeans1"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Celana jeans pria kualitas ori"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 80.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/kemeja5"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Kemeja pria lengan panjang "
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 70.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:paddingStart="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Produk"
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <Button
+                        android:id="@+id/bt_lihatsemuaproduk"
+                        android:layout_width="98dp"
+                        android:layout_height="31dp"
+                        android:textSize="10dp"
+                        android:text="Lihat Semua"
+                        android:background="@drawable/tombol_bulat"
+                        android:textColor="@color/biru"
+                        android:inputType="textCapWords"
+                        android:onClick="LihatSemuaProdukActivity">
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/jeans2"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Celana jeans hitam ori"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 80.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/kemeja3"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Kemeja lengan panjang premium"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 90.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/hoodie1"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Hoodie distro premium murah"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 150.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/batik"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Baju batik pria lengan panjang"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 90.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+
+                    <com.example.bajuonline.widget.hotsale
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/hoodie2"
+                            android:cropToPadding="true">
+
+                        </ImageButton>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Hoodie pria distro premium"
+                                android:textSize="14dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rp 150.000"
+                                android:textSize="10dp">
+
+                            </TextView>
+                            <Button
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Pesan"
+                                android:inputType="textCapWords">
+                            </Button>
+                        </LinearLayout>
+                    </com.example.bajuonline.widget.hotsale>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -67,6 +749,6 @@
         app:labelVisibilityMode="labeled"
         android:id="@+id/navigation_bottom"
         android:layout_width="match_parent"
-        android:layout_height="55dp">
+        android:layout_height="50dp">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -10,6 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BajuOnline">
         <activity
+            android:name=".PesanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoritActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KeranjangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LihatSemuaProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JaketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CelanaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BajuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LihatSemuaTerlarisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KategoriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TerlarisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PencarianActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

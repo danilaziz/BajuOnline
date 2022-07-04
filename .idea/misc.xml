@@ -4,10 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/drawable/bg_bulat.xml" value="0.162" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/drawable/bg_judul.xml" value="0.18" />
         <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/drawable/bulat.xml" value="0.162" />
-        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/drawable/tombol_bulat.xml" value="0.1" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_baju.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_celana.xml" value="0.22" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_favorit.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_jaket.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_kategori.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_keranjang.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_lihat_semua_produk.xml" value="0.25" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_lihat_semua_terlaris.xml" value="0.25" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_pencarian.xml" value="0.25" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_pesan.xml" value="0.25" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_produk.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/activity_terlaris.xml" value="0.20416666666666666" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/list_item.xml" value="0.25" />
         <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/ly_fitur_produk.xml" value="0.22" />
-        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/ly_hotsale.xml" value="0.2" />
+        <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/ly_hotsale.xml" value="0.25" />
         <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/layout/ly_kategori.xml" value="0.25" />
         <entry key="..\:/ANDROID STUDIO DOC/BajuOnline/app/src/main/res/menu/menu_bawah.xml" value="0.20416666666666666" />
       </map>
