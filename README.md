@@ -8,7 +8,7 @@ Link YouTube
 
 
 Halaman Utama
-![alt text](http://url/to/halaman.jpg)
+![halaman.jpg](http://url/to/halaman.jpg)
 
 
 
