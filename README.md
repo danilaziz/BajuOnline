@@ -16,6 +16,14 @@
 ### Kategori Baju
 ![kategoribaju](https://user-images.githubusercontent.com/105085563/177261461-5cdade46-1935-4676-8cf0-3b344640ba95.jpg)
 
+### Kategori Celana
+
+
+### Kategori Jaket 
+
+
+### Pencarian
+
 
 
 
