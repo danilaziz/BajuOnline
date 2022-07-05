@@ -26,7 +26,12 @@
 ![pencarian](https://user-images.githubusercontent.com/105085563/177262084-6735eab6-8d82-4426-abc0-c3f895f1beef.jpg)
 
 ### Pesanan
+![pesanan](https://user-images.githubusercontent.com/105085563/177262443-1eda7dc5-6cc0-4179-87bf-6a15ba8e4d25.jpg)
 
+### Lihat Semua Terlaris
+
+
+### Lihat Semua Produk
 
 
 
