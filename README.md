@@ -1,9 +1,10 @@
 # BajuOnline
 
-###Aplikasi BajuOnline ini dapat menjadi solusi bagi Anda yang ingin membeli baju tanpa harus keluar rumah. 
+## Aplikasi BajuOnline ini dapat menjadi solusi bagi Anda 
+yang ingin membeli baju tanpa harus keluar rumah. 
 
 
-#Link YouTube
+Link YouTube
 
 
 Halaman Utama
